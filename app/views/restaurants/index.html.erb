@@ -20,8 +20,10 @@
  <% if restaurant.reviews.any? %>
    <ul>
      <% restaurant.reviews.each do |review| %>
+     <p><%= pluralize review.endorsements.count, 'endorsement' %></p>
        <li>
          <%= review.thoughts %>, <strong><%= review.rating %></strong>/5
+         <%= link_to "Endorse Review", review_endorsements_path(review), method: :post %>
        </li>
      <% end %>
    </ul>
