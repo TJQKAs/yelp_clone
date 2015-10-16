@@ -17,6 +17,7 @@ gem 'shoulda'
 gem 'omniauth-facebook'
 gem 'poltergeist'
 gem 'database_cleaner'
+gem 'paperclip'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
